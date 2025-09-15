@@ -186,11 +186,59 @@
             transform: translateY(0);
         }
 
-        @media (max-width: 600px) {
-            body {
+        /* スマホ用（768px以下） */
+        @media (max-width: 768px) {
+            body .main {
                 padding: 20px;
             }
+
+            .fv-slider {
+                height: 300px;
+                /* スマホではスライダーを低く */
+            }
+
+            #mainNavbar {
+                font-size: 1rem;
+            }
+
+            #mainNavbar .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px;
+            }
         }
+
+        /* 小さいスマホ用（480px以下） */
+        @media (max-width: 480px) {
+            .fv-slider {
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            button {
+                font-size: 13px;
+                padding: 8px;
+            }
+        }
+        
     </style>
 </head>
 
